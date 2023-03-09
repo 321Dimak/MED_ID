@@ -9,6 +9,7 @@ class MedicineDatabaseApplication {
     public static void main(String[] args) throws IOException {
         database.parseJasonToList();
         database.getDatabase().forEach(System.out::println);
+        System.out.println(database.getDatabase().size());
     }
 
 }
